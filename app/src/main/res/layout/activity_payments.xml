@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payments"
+    android:layout_marginTop="50px">
+
+    <EditText
+        android:layout_below="@+id/title"
+        android:hint="Enter Phone Number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/number"/>
+    <Button
+        android:id="@+id/button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back" />
+
+    <TextView
+        android:layout_below="@+id/button"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:text="Payments"
+        android:layout_height="wrap_content" />
+    <android.support.v7.widget.CardView
+        android:layout_below="@+id/number"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardCornerRadius="5dp"
+        android:id="@+id/mpesacard">
+
+        <Button
+            android:layout_width="match_parent"
+            android:text="M-PESA"
+            android:id="@+id/mpesa"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        card_view:cardCornerRadius="5dp"
+        android:layout_below="@+id/mpesacard">
+        <Button
+            android:layout_width="match_parent"
+            android:text="AIRTEL-MONEY"
+            android:layout_height="match_parent" />
+    </android.support.v7.widget.CardView>
+
+
+
+
+</RelativeLayout>
